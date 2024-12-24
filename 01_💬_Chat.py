@@ -20,8 +20,8 @@ def extract_model_names(models_info: list) -> tuple:
     Return:
         A tuple containing the model names.
     """
-
-    return tuple(model["name"] for model in models_info["models"])
+    print("models_info:", models_info)  # Debug print
+    return tuple(model["model"] for model in models_info["models"])
 
 
 def main():

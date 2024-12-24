@@ -37,7 +37,7 @@ def get_allowed_model_names(models_info: dict) -> tuple:
     return tuple(
         model
         for model in allowed_models
-        if model in [m["name"] for m in models_info["models"]]
+        if model in [m["model"] for m in models_info["models"]]
     )
 
 
